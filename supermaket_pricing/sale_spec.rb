@@ -4,9 +4,9 @@ describe Sale do
     sale.based_on.must_exist
   end
 
-  it 'should have amount of items if based on is cuantity' do
+  it 'should have amount of items if based on is quantity' do
     sale = Sale.new
-    sale.based_on.must_equal 'cuantity'
+    sale.based_on.must_equal 'quantity'
     sale.item_amount.must_exist
   end
 
